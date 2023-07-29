@@ -69,7 +69,6 @@ div.panel.hero > div.container {
     z-index: 2;
     top: 24rem;
     height: 265px;
-    width: 600px;
     max-width: 600px;
 }
 
@@ -94,6 +93,10 @@ div.panel.hero > div.container {
     text-decoration: none;
     user-select: none;
     transition: color 0.2s;
+
+    width: 6rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-secondary:hover {
@@ -197,14 +200,14 @@ div.panel.content-area div.container div.columns div.row div.col-9 p {
 }
 
 .help-block, .item-lookup {
-    width: 400px;
-    max-width: 400px;
-    padding: 15px 15px 15px 45px;    
+    width: 375px;
+    max-width: 375px;
+    padding: 5px 15px 15px 35px;    
     margin-top: 35px;
 }
 
 .help-block {
-    height: 150px;
+    height: 125px;
 }
 
 .item-lookup {
@@ -212,9 +215,13 @@ div.panel.content-area div.container div.columns div.row div.col-9 p {
     display: grid;
 }
 
+// Help Number
+div.col-3 h3 {
+    margin: -15px 0 -10px 0;
+}
+
 // Quick Lookup Input Field
 input.form-field.form-field-type-text[name="id-lookup"] {
-    
     width: 19rem;
 }
 
@@ -241,7 +248,7 @@ a.btn.btn-secondary.btn-block[href="#"] {
 }
 
 hr {
-    width: 10rem;
+    width: 12.5rem;
     display: inline-flex;
     border-top: 3px solid #bec8d1;
 
@@ -265,8 +272,13 @@ label {
 }
 
 .client-footer__links {
-    padding-top: 20px;
+    margin-top: 25px;
+    display: inline;
 }
+
+div.panel.client-footer div.container div.columns div.row div.col-9  {
+    padding-top: 25px !important; 
+  }
 
 .client-footer__link {
     text-decoration: none;
@@ -298,12 +310,174 @@ div.row div.col-9 p {
 // Client Foooter Logo Styling
 .text-right {
     justify-content: flex-end;
+    flex-direction: column-reverse !important;
     align-items: baseline;
-    margin-bottom: 8.5rem;
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 375px) {
+    
     body {
         height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .hero__content {
+        min-width: 300px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .client-header__logo {
+        padding-left: 23px;
+    }
+
+    .client-header__link {
+        text-wrap: nowrap;
+    }
+
+    .col-9 {
+        padding: 15px 0 0 45px;
+        flex: 4.5 1;
+    }
+
+    .hero__content {
+        background: #FFFFFF;
+        padding: 10px 0px 0px 19px;
+        position: relative;
+        z-index: 2;
+        top: 24rem;
+        height: 330px;
+        max-width: 600px;
+        width: 300px;
+    }
+
+    // Paragraph text & color
+    div.panel.content-area div.container div.columns div.row div.col-9 p {
+        color: #252e3b !important;
+        padding-bottom: 15px;
+        width: 20rem;
+    }
+
+    // Search Input 
+    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+        width: 15.25rem;
+    }
+
+    div.panel.hero > div.container {
+        padding-right: 3.25rem;
+    }
+
+    // Return Books Btn
+    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+        width: 15.25rem;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .help-block, .item-lookup {
+        width: 340px;
+        max-width: 355px;
+        padding: 5px 22px 15px 17px;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .hero {
+    height: 51rem;
+    }
+
+    // Container of Help and Quick Lookup boxes
+    div.row > div.col-3 {
+        flex: 3 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0;
+        margin-left: 1.5rem;
+    }
+   
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        overflow: visible;    
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+
+    .client-header__logo {
+        width: 150px;
+        height: 50px;
+        padding-left: 60px;
+    }
+
+    .col-9 {
+        padding: 15px 0 0 60px;
+        flex: 4.5 1;
+    }
+        
+
+    .hero__content {
+        background: #FFFFFF;
+        padding: 10px 0px 0px 24px;
+        position: relative;
+        z-index: 2;
+        top: 24rem;
+        height: 265px;
+        width: 600px;
+        max-width: 600px;
+    }
+
+    div.panel.hero > div.container {
+        justify-content: flex-end !important;
+        padding-right: 5.25rem;
+    }
+
+    // Return Books Btn
+    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+        width: 15.25rem;
+        display: inline-flex;
+        text-align: center;
+        margin-left: 5px;
+        justify-content: center;
+    }
+
+    // Search Input 
+    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+        width: 31rem;
+    }
+
+    // Paragraph text & color
+    div.panel.content-area div.container div.columns div.row div.col-9 p {
+        color: #252e3b !important;
+        padding-bottom: 15px;
+        width: auto;
+    }
+
+    .help-block, .item-lookup {
+        width: 375px;
+        max-width: 375px;
+        padding: 5px 15px 15px 35px;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    // Container of Help and Quick Lookup boxes
+    div.row > div.col-3 {
+        flex: 3 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5.25rem;
     }
 }
