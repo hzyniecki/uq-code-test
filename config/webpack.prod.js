@@ -10,7 +10,7 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '/uq-code-test/',
     filename: '[name].[contenthash].bundle.js',
   },
   plugins: [
