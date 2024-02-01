@@ -1,0 +1,482 @@
+// Fonts & Reset
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './reset.scss';
+
+//
+// Theme Starts Here
+//
+
+.client-header {
+    padding: 25px 25px 25px 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.client-header__links {
+    justify-content: flex-end;
+    display: flex;
+    align-items: baseline;
+    text-align: right;
+    flex: 1;
+    padding-right: 3.75rem;
+}
+
+.client-header__link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6a7a8e;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.client-header__link:hover {
+    color: #3179c3;
+}
+
+// Client header link active
+.active {
+    color: #3179c3 !important;
+    border-bottom: 3px solid #bec8d1;
+    padding-bottom: 5px;
+}
+
+// Stock background Image banner
+.hero {
+    background-image: url(/assets/hero-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    min-height: 100vh;
+
+    z-index: 1;
+    top: -10.5rem;
+    height: 56rem;
+    position: relative;
+    margin-bottom: -10.5rem;
+}
+
+div.panel.hero > div.container {
+    justify-content: flex-end !important;
+    padding-right: 5.25rem;
+}
+
+.hero__content {
+    background: #FFFFFF;
+    padding: 10px 45px 0px 45px;
+    position: relative;
+    z-index: 2;
+    top: 24rem;
+    height: 265px;
+    max-width: 600px;
+}
+
+.hero__buttons {
+    margin-top: 15px;
+}
+
+.btn-primary { 
+    text-decoration: none;
+    background-color: #0C2850;
+    color: #FFFFFF;
+    user-select: none;
+}
+
+.btn-primary:hover {
+    background-color: #061428;
+}
+
+.btn-secondary {
+    background-color: #3179C3;
+    color: #FFFFFF;
+    text-decoration: none;
+    user-select: none;
+    transition: color 0.2s;
+
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary:hover {
+    background-color: #0066cc;
+}
+
+.form-field-type-text {
+    height: 2rem;
+}
+
+// Search Input 
+input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+    width: 31rem;
+}
+
+// Search Btn
+a.btn.btn-primary[href="#"] {
+    width: 15.25rem;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+
+// Return Books Btn
+div.hero__buttons > a.btn.btn-secondary[href="#"] {
+    width: 15.25rem;
+    display: inline-flex;
+    text-align: center;
+    margin-left: 5px;
+    justify-content: center;
+  }
+
+// Lets get started portion of page
+.banner {
+    width: 100%;
+    background: #3179C3;
+}
+
+.fa-book {
+    color: #C3D7EE;
+    padding-left: 60px;
+    font-size: 25px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+h3 { 
+    font-weight: 300;
+}
+
+.hero__callout {
+    color: #68788d;
+}
+
+.client-header__logo {
+    width: 150px;
+    height: 50px;
+    padding-left: 60px;
+}
+
+h5 {
+    color: #0C2850;
+    text-transform: uppercase;
+}
+
+.content-area { 
+    background-color: #EFF3F7;
+}
+
+.background-white {
+    background-color: #FFFFFF;
+}
+
+.col-9 {
+    padding: 15px 0 0 60px;
+    flex: 4.5
+}
+
+// Container of Help and Quick Lookup boxes
+div.row > div.col-3 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5.25rem;
+  }
+
+.btn {
+    padding: 10px;
+    font-weight: 600;
+}
+
+// Paragraph text & color
+div.panel.content-area div.container div.columns div.row div.col-9 p {
+    color: #252e3b !important;
+    padding-bottom: 15px;
+}
+
+.help-block, .item-lookup {
+    width: 375px;
+    max-width: 375px;
+    padding: 5px 15px 15px 35px;    
+    margin-top: 35px;
+}
+
+.help-block {
+    height: 125px;
+}
+
+.item-lookup {
+    height: 220px;
+    display: grid;
+}
+
+// Help Number
+div.col-3 h3 {
+    margin: -15px 0 -10px 0;
+}
+
+// Quick Lookup Input Field
+input.form-field.form-field-type-text[name="id-lookup"] {
+    width: 19rem;
+}
+
+//  Quick Lookup Search Btn  
+a.btn.btn-secondary.btn-block[href="#"] {
+    text-align: center;
+    margin-top: 10px;
+
+    width: 19rem !important;  
+}
+
+.info-icon {
+    color: #BEC8D1;
+    cursor: pointer;
+}
+
+.info-icon:hover {
+    color: #5A5A5A;
+}
+
+.fa-search {
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+hr {
+    width: 12.5rem;
+    display: inline-flex;
+    border-top: 3px solid #bec8d1;
+
+}
+
+label {
+    display: grid;
+}
+
+.text-muted {
+    color: #69798e;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.client-footer__links {
+    margin-top: 25px;
+    display: inline;
+}
+
+div.panel.client-footer div.container div.columns div.row div.col-9  {
+    padding-top: 25px !important; 
+  }
+
+.client-footer__link {
+    text-decoration: none;
+    color: #68788D;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.client-footer__link:hover{
+    color: #3179c3;
+}
+
+// Copyright
+div.panel.client-footer div.container div.columns div.row div.col-9 h5 {
+    color:  #3179c3 !important;  
+}
+
+// Footer Text Block
+div.row div.col-9 p {
+    color: #68788D;
+    padding-bottom: 25px;
+}
+
+// Png Footer Logo 
+.client-footer__logo {
+    width: 100px;
+}
+
+// Client Foooter Logo Styling
+.text-right {
+    justify-content: flex-end;
+    flex-direction: column-reverse !important;
+    align-items: baseline;
+}
+
+@media only screen and (min-width: 375px) {
+    
+    body {
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .hero__content {
+        min-width: 300px;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .client-header__logo {
+        padding-left: 23px;
+    }
+
+    .client-header__link {
+        text-wrap: nowrap;
+    }
+
+    .col-9 {
+        padding: 15px 0 0 45px;
+        flex: 4.5 1;
+    }
+
+    .hero__content {
+        background: #FFFFFF;
+        padding: 10px 0px 0px 19px;
+        position: relative;
+        z-index: 2;
+        top: 24rem;
+        height: 330px;
+        max-width: 600px;
+        width: 300px;
+    }
+
+    // Paragraph text & color
+    div.panel.content-area div.container div.columns div.row div.col-9 p {
+        color: #252e3b !important;
+        padding-bottom: 15px;
+        width: 20rem;
+    }
+
+    // Search Input 
+    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+        width: 15.25rem;
+    }
+
+    div.panel.hero > div.container {
+        padding-right: 3.25rem;
+    }
+
+    // Return Books Btn
+    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+        width: 15.25rem;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .help-block, .item-lookup {
+        width: 340px;
+        max-width: 355px;
+        padding: 5px 22px 15px 17px;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .hero {
+    height: 51rem;
+    }
+
+    // Container of Help and Quick Lookup boxes
+    div.row > div.col-3 {
+        flex: 3 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0;
+        margin-left: 1.5rem;
+    }
+   
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        overflow: visible;    
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+
+    .client-header__logo {
+        width: 150px;
+        height: 50px;
+        padding-left: 60px;
+    }
+
+    .col-9 {
+        padding: 15px 0 0 60px;
+        flex: 4.5 1;
+    }
+        
+
+    .hero__content {
+        background: #FFFFFF;
+        padding: 10px 0px 0px 29px;
+        position: relative;
+        z-index: 2;
+        top: 24rem;
+        height: 265px;
+        width: 555px;
+    }
+
+    div.panel.hero > div.container {
+        justify-content: flex-end !important;
+        padding-right: 5.25rem;
+    }
+
+    // Return Books Btn
+    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+        width: 15.25rem;
+        display: inline-flex;
+        text-align: center;
+        margin-left: 5px;
+        justify-content: center;
+    }
+
+    // Search Input 
+    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+        width: 31rem;
+    }
+
+    // Paragraph text & color
+    div.panel.content-area div.container div.columns div.row div.col-9 p {
+        color: #252e3b !important;
+        padding-bottom: 15px;
+        width: auto;
+    }
+
+    .help-block, .item-lookup {
+        width: 375px;
+        max-width: 375px;
+        padding: 5px 15px 15px 35px;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    // Container of Help and Quick Lookup boxes
+    div.row > div.col-3 {
+        flex: 3 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5.25rem;
+    }
+}
