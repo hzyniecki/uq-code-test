@@ -44,7 +44,7 @@
 
 // Stock background Image banner
 .hero {
-    background-image: url(/assets/hero-bg.jpg) ;
+    background-image: url("../assets/hero-bg.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
@@ -108,12 +108,12 @@ div.panel.hero > div.container {
 }
 
 // Search Input 
-input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+input[name="search"] {
     width: 31rem;
 }
 
 // Search Btn
-a.btn.btn-primary[href="#"] {
+a.btn.btn-primary {
     width: 15.25rem;
     display: inline-flex;
     text-align: center;
@@ -121,7 +121,7 @@ a.btn.btn-primary[href="#"] {
 }
 
 // Return Books Btn
-div.hero__buttons > a.btn.btn-secondary[href="#"] {
+div.hero__buttons > a.btn.btn-secondary {
     width: 15.25rem;
     display: inline-flex;
     text-align: center;
@@ -221,12 +221,12 @@ div.col-3 h3 {
 }
 
 // Quick Lookup Input Field
-input.form-field.form-field-type-text[name="id-lookup"] {
+input[name="id-lookup"]{
     width: 19rem;
 }
 
 //  Quick Lookup Search Btn  
-a.btn.btn-secondary.btn-block[href="#"] {
+a.btn.btn-secondary.btn-block {
     text-align: center;
     margin-top: 10px;
 
@@ -361,7 +361,7 @@ div.row div.col-9 p {
     }
 
     // Search Input 
-    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+    input[name="search"] {
         width: 15.25rem;
     }
 
@@ -370,7 +370,7 @@ div.row div.col-9 p {
     }
 
     // Return Books Btn
-    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+    div.hero__buttons > a.btn.btn-secondary {
         width: 15.25rem;
         display: inline-flex;
         text-align: center;
@@ -443,7 +443,7 @@ div.row div.col-9 p {
     }
 
     // Return Books Btn
-    div.hero__buttons > a.btn.btn-secondary[href="#"] {
+    div.hero__buttons > a.btn.btn-secondary {
         width: 15.25rem;
         display: inline-flex;
         text-align: center;
@@ -452,7 +452,7 @@ div.row div.col-9 p {
     }
 
     // Search Input 
-    input.form-field.form-field-type-text[name="search"][type="text"][placeholder="Search Term"] {
+    input[name="search"] {
         width: 31rem;
     }
 
