@@ -45,8 +45,16 @@ module.exports = merge(common, {
       },
       {
         test: /\.(png|jpg|gif|svg)$/i,
-        type: 'asset/resource',
-      },
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets',
+            },
+          },
+        ],
+      }
     ],
   },
 
